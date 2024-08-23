@@ -1,0 +1,61 @@
+Objective:
+
+Build a Single Page Application (SPA) using React and Tailwind CSS that replicates the functionality of a cost of living comparison tool. Users will be able to input their current and target locations, household income, and household size, and receive a detailed comparison of living costs between the two locations.
+
+Tech Stack:
+
+	•	Frontend: React (with TypeScript)
+	•	Styling: Tailwind CSS
+	•	State Management: React’s Context API or Redux
+	•	Build Tool: Vite
+	•	Version Control: Git (hosted on GitHub or GitLab)
+	•	Deployment: Vercel or Netlify
+
+Key Functionalities:
+
+	1.	Location Selection:
+	•	Two dropdowns for selecting the current and target locations.
+	•	Location data can be fetched from an API (e.g., Google Places) or a predefined list.
+	2.	Income & Household Inputs:
+	•	A numeric input field for household income, with an optional slider for easier adjustments.
+	•	Radio buttons for selecting the number of adults and children in the household.
+	3.	Cost Calculation:
+	•	The app will calculate the equivalent income required in the new location to maintain the same standard of living as in the current location.
+	•	Categories like taxes, housing, and food will be compared and displayed.
+	4.	Result Display:
+	•	A detailed comparison of living costs in the two locations.
+	•	A bar chart or similar visualization component to represent the comparison graphically.
+	•	An income summary showing how much more or less income is needed in the new location.
+	5.	Responsive Design:
+	•	The app will be fully responsive, ensuring a good user experience on mobile, tablet, and desktop devices.
+	•	Tailwind CSS will be used to create a mobile-first design.
+	6.	Error Handling:
+	•	User-friendly error messages for invalid inputs or issues during API calls.
+	•	An error boundary to catch any unexpected issues and provide a fallback UI.
+
+Component Structure:
+
+	1.	App Component:
+	•	The main container that holds all other components.
+	2.	LocationSelector Component:
+	•	Contains two dropdowns for selecting the current and target locations.
+	3.	IncomeInput Component:
+	•	A field for entering the household income, potentially with a slider for adjusting the value.
+	4.	HouseholdInput Component:
+	•	Radio buttons for selecting the number of adults and children in the household.
+	5.	CostComparison Component:
+	•	Displays the calculated comparison between the two locations.
+	6.	ResultChart Component:
+	•	A bar chart or other graphical representation of the cost comparison.
+	7.	ErrorBoundary Component:
+	•	Catches and handles any unexpected errors in the app, providing a user-friendly error message.
+
+Styling with Tailwind CSS:
+
+	•	Use Tailwind’s utility-first approach to style components.
+	•	Ensure that components are modular, reusable, and easy to maintain.
+	•	Leverage Tailwind’s responsive design features to create a mobile-first experience.
+
+API Integration:
+
+	•	Location Data: Fetch location data from an external API or use a static list.
